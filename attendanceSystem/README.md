@@ -9,4 +9,4 @@ Machine Learning model developed and deployed on a web browser.
 - You may download the weights learned and architecture of model trained, in the format **.bin** and **.json**
 - Naive implementation of ***Google's Teachable Machine***
 - A framework which is extensible for developing **SMART ATTENDANCE SYSTEM**
- -check at https://teachablemachine.withgoogle.com/train/image
+- check at https://teachablemachine.withgoogle.com/train/image
