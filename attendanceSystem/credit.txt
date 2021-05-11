@@ -1,0 +1,22 @@
+******************* This is an Undergraduate mini project to implement the learnings of Browser based deployement of ML models ************************
+
+Used Transfer Learning from the architecture MobileNet SSD
+			
+Credit for the basic architecture of this project was learnt in a course from deeplearning.ai by
+
+					Laurence Moroney, 
+					AI Advocate, Google
+					Mentor of Browser based Models with Tensorflow.js
+
+Credit for making people believe and inculcating the passion for Machine Learning and Deep Learning completely rests with:
+
+					Andrew Y Ng ❤
+					Founder and Lead, GOogle Brain(Deep Learning) Project
+					Co-Founder and Chairman, Coursera
+					Founder, deeplearning.ai
+					Founder, CEO Landing AI
+					Chief Scientist, Baidu
+					Adjunct Professor, Stanford University
+					Creator of the great material: Machine Learning Course, Coursera
+
+Besides, at frontline: Anurag, Ashwin, Gourav, Murari, Nilesh
