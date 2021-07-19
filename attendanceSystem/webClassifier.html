@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Smart Attendance System</title>    
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="webcam.js"></script>
+<script src="createdataset.js"></script>
+</head>
+<style>
+body {
+  background-image: url('a.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  #background-size: 100% 100%;
+}
+</style>
+    <center><h1><font color = "#0000FF">Please look into the CAMERA</font></h1></center>
+<table>
+        <tr> <td rowspan="20" style="padding:30px">
+    <div>
+		<div>
+            <video autoplay playsinline muted id="wc" width="400" height="300"></video>
+		</div>
+	</div>
+            </td>
+            <td align="center">
+                <b>Click on class buttons and CREATE your own DATASET</b>
+            </td>
+       </tr>
+        <tr>
+            <td align="left"><button type="button" id="0" onclick="handleButton(this)" >Person 1 Samples</button></td>
+    </tr>
+        <tr>
+            <td align = "left"><button type="button" id="1" onclick="handleButton(this)" >Person 2 Samples</button></td>
+        </tr>   
+    <tr>
+            <td align = "left"><button type="button" id="2" onclick="handleButton(this)" >Person 3 Samples</button></td>
+        </tr> 
+    <tr>
+            <td align = "left"><button type="button" id="3" onclick="handleButton(this)" >Person 4 Samples</button></td>
+        </tr> 
+    <tr>
+            <td align = "left"><button type="button" id="4" onclick="handleButton(this)" >Person 5 Samples</button></td>
+        </tr> 
+        <tr><td>
+            <b> <div id="class1samples"><mark>Person 1 Samples:</mark></div>
+                <div id="class2samples"><mark>Person 2 Samples:</mark></div>
+                <div id="class3samples"><mark>Person 3 Samples:</mark></div>
+                <div id="class4samples"><mark>Person 4 Samples:</mark></div>
+                <div id="class5samples"><mark>Person 5 Samples:</mark></div></b>
+            </td>
+        </tr>    
+        <tr><td><button type="button" id="train" onclick="doTraining()" >Train Network</button></td></tr>
+    <tr><td align = "center">
+        <div id="justatext" align="center"><mark><font color="red">Press (Ctrl+Shift+I) or Open Developer Tools to see loss,<br>Once Training is done, Press "Start Predicting" and you may download the model</mark></div></td></tr>
+        <tr><td align = "center">
+	        <button type="button" id="startPredicting" onclick="startPredicting()" >Start Predicting</button>
+            <button type="button" id="stopPredicting" onclick="stopPredicting()" >Stop Predicting</button></td></tr>
+        <tr><td align = "center"><div id="prediction"></div><br></td></tr>
+        <tr><td align = "center"><button type="button" id="saveModel" onclick="saveModel()" >Download Model</button></td></tr>
+        </table>   
+</body>
+<script src="index.js"></script>
+</html>
